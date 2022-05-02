@@ -10,5 +10,9 @@
         &:hover {
             @extend %transition;
             background: $color-light-main;
+            & .button {
+                background: $color-primary-light;
+                border: 2px solid $color-primary-light;
+            }
         }
 }

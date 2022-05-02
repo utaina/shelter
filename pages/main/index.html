@@ -11,7 +11,7 @@
     <header>
         <div class="wrapper header_wrapper">
                 <div class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                     <h1 class="title">Cozy House</h1>
                     <p class="logo-subtitle">Shelter for pets in Boston</p>
                 </a>
@@ -19,10 +19,10 @@
 
             <nav class="navigation">
                 <ul class="nav">
-                    <li class="nav-links"><a class="active" href="#">About the shelter</a></li>
-                    <li class="nav-links"><a href="#">Our pets</a></li>
-                    <li class="nav-links"><a href="#">Help the shelter</a></li>
-                    <li class="nav-links"><a href="#">Contacts</a></li>
+                    <li class="nav-links"><a class="active" href="./index.html">About the shelter</a></li>
+                    <li class="nav-links"><a href="../pets/our_pets.html" target="_blank">Our pets</a></li>
+                    <li class="nav-links"><a href="#help">Help the shelter</a></li>
+                    <li class="nav-links"><a href="#footer">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +35,7 @@
                         <h2>Not only people<br>need a house</h2>
                         <p class="start-text">We offer to give a chance to a little and nice puppy with an extremely wide and 
                             open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                        <button class="button button__colored">Make a friend</button>
+                        <a href="#our-pets"><button class="button button__colored">Make a friend</button></a>
                     </div>
                     <img src="/assets/images/start-screen-puppy.png" alt="dog picture">
             </div>
@@ -55,7 +55,7 @@
             </div>
         </section>
 
-        <section class="our-pets">
+        <section class="our-pets" id="our-pets">
             <div class="wrapper pets_wrapper">
                 <h3 class="pets-title">Our friends who<br>are looking for a house</h3>
                 <div class="slider">
@@ -78,20 +78,18 @@
                             <a href="#" class="ancor__card">
                                 <div class="pet-card">
                                     <img src="/assets/images/pets-woody.png" alt="woody">
-                                    <h4 class="card_reader">Katrine</h4>
+                                    <h4 class="card_reader">Woody</h4>
                                     <button class="button button__light">Learn more</button>
                                 </div>
                             </a>
                     </div>
                     <button class="button button__light button__round">&rarr;</button>
-                </div>
-                
-                <button button class="button button__colored pets-button">Get to know the rest</button>
-
+                </div>   
+                <a href="../pets/our_pets.html" target="_blank"><button button class="button button__colored pets-button">Get to know the rest</button></a>
             </div>
         </section>
 
-        <section class="help">
+        <section class="help" id="help">
             <div class="wrapper help_wrapper">
                 <h3>How you can help<br>our shelter</h3>
                 <div class="icons-layout">
@@ -141,7 +139,7 @@
                     <div class="donation-content">
                         <h3>You can also<br>make a donation</h3>
                         <h5>Name of the bank / Type of bank account</h5>
-                        <a src="#">
+                        <a href="#0">
                             <div class="credit-card"> 
                                     <img src="/assets/icons/credit-card.svg" alt="credit-card">
                                     <span class="card-number">8380 2880 8028 8791 7435</span>
@@ -154,7 +152,7 @@
         </section>
     </main>
     
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper footer_wrapper">
                 <div class="contact-block footer-block1">
                     <h3 class="footer-header">For questions<br>and suggestions</h3>
@@ -173,13 +171,13 @@
                 </div>
                 <div class="contact-block footer-block2" >
                     <h3 class="footer-header">We are waiting<br>for your visit</h3>
-                    <a href="#">
+                    <a target="_blank" href="https://www.google.com/maps/place/1+Centre+St,+Boston,+MA+02130,+USA/@42.3227448,-71.1019048,17z/data=!3m1!4b1!4m5!3m4!1s0x89e379804904c2e1:0xf2288376436c7143!8m2!3d42.3227448!4d-71.0997161">
                         <div class="contact-link">
                             <img src="/assets/icons/icon-marker.svg" alt="">
                             <h4 class="footer-link">1 Central Street, Boston<br>(entrance from the store)</h4>
                         </div>
                     </a>
-                    <a href="#">
+                    <a target="_blank" href="https://www.google.com/maps/place/South+Park+Court,+18+S+Park+Rd,+London+SW19+8TD,+UK/@51.4202685,-0.2023686,17z/data=!3m1!4b1!4m5!3m4!1s0x487608baa7401b31:0x18e66d9fcd2f7d77!8m2!3d51.4202685!4d-0.2001799">
                         <div class="contact-link">
                             <img src="/assets/icons/icon-marker.svg" alt="">
                             <h4 class="footer-link">18 South Park, London </h4>

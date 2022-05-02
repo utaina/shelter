@@ -665,6 +665,10 @@ a {
 .pet-card:hover {
   background: #FFFFFF;
 }
+.pet-card:hover .button {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
 
 .icon {
   display: flex;
@@ -795,6 +799,10 @@ a {
   width: fit-content;
   border-radius: 9px;
   padding: 5px 10px;
+}
+.credit-card:hover {
+  background: #FDDCC4;
+  border: 5px solid #FDDCC4;
 }
 
 .footer_wrapper {
