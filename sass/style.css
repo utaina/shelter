@@ -457,11 +457,11 @@ template {
   transition: all 0.3s ease-out;
 }
 
-.nav-links, p, .logo-subtitle {
+.nav-links, p, .italic-text, .logo-subtitle {
   font-family: Arial, Verdana, sans-serif;
 }
 
-.button, h4, .card-number, h3, h2, h1 {
+.button, h5, h4, .card-number, h3, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -548,6 +548,25 @@ h4, .card-number {
 }
 h4.footer-link, .card-number.footer-link {
   color: #F1CDB3;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  font-weight: normal;
+  font-style: normal;
+  color: #545454;
+}
+
+.italic-text {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: italic;
+  color: #B2B2B2;
 }
 
 p {
@@ -647,6 +666,20 @@ a {
   background: #FFFFFF;
 }
 
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.contact-link {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
@@ -714,6 +747,81 @@ a {
 
 .our-pets {
   background: #F6F6F6;
+}
+
+.help_wrapper {
+  padding: 80px 0 100px 0;
+  text-align: center;
+}
+
+.help {
+  background: #FFFFFF;
+}
+
+.icons-layout {
+  padding-top: 59px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation_wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.donation-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  row-gap: 20px;
+}
+
+.donation {
+  background: #F6F6F6;
+}
+
+.credit-card {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  border: 5px solid #F1CDB3;
+  background: #F1CDB3;
+  width: fit-content;
+  border-radius: 9px;
+  padding: 5px 10px;
+}
+
+.footer_wrapper {
+  padding-top: 40px;
+  display: flex;
+  column-gap: 160px;
+  flex-wrap: wrap;
+  column-gap: 159px;
+  row-gap: 65px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 43px;
+}
+
+.footer-block1 {
+  row-gap: 40px;
+  width: 279px;
+}
+
+.footer-block2 {
+  row-gap: 33px;
+  width: 302px;
 }
 
 /*# sourceMappingURL=style.css.map */

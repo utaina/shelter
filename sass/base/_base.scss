@@ -68,6 +68,18 @@ h4, .card-number {
             color: $color-primary
         }
 }
+h5 {
+    margin: 0px;
+    @include font (15px, 110%, 0.06em);
+    color: $color-heading-dark;
+    @extend %font-add;
+}
+
+.italic-text {
+    @extend %font-main;
+    @include font (12px, 150%, normal, normal, italic);
+    color: $color-italic-text;
+}
 
 p {
     @include font (1.5rem, 160%);
