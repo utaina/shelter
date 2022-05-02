@@ -1,0 +1,30 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+
+
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+//Base
+@import "base/base";
+@import "base/buttons";
+@import "base/logo";
+
+//Components
+@import "components/navigation";
+@import "components/pet-card";
+@import "components/icon";
+@import "components/contact-link";
+
+
+//Layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/start";
+@import "layouts/about";
+@import "layouts/slider";
+@import "layouts/help";
+@import "layouts/donation";
+@import "layouts/footer";
+
+
