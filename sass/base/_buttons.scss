@@ -1,0 +1,29 @@
+.button {
+    @include font (1.7rem, 130%, 0.06em);
+    @extend %font-add;
+    color: $color-button;
+    border-radius: 100px;
+    cursor: pointer;
+    @extend %transition;
+    padding: 13px 43px;
+    box-sizing: border-box;
+    border: 2px solid $color-primary;
+        &:hover {
+            background: $color-primary-light;
+            border: 2px solid $color-primary-light;
+        }
+        &__colored {
+            background: $color-primary;
+        }
+        &__round {
+            border-radius: 100%;
+            padding: 13px 15px;
+        }
+        &__light {
+            background:  $color-link-hover;
+            &:hover {
+                background: $color-primary-light;
+                border: 2px solid $color-primary-light;
+            }
+        }
+    }

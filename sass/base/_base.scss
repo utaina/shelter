@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-ItalicMT.woff2') format('woff2'),
+        url('Arial-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('ArialMT.woff2') format('woff2'),
+        url('ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url('Georgia.woff2') format('woff2'),
+        url('Georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: $background;
+    font-size: 1.5rem;
+}
+
+html {
+    font-size: 10px;
+}
+
+h1 {
+    @include font (3.2rem, 110%, 0.06em);
+    @extend %font-add;
+    color: $color-primary;
+}
+.logo-subtitle {
+    @include font (1.3rem, 115%, 0.1em);
+    @extend %font-main;
+    color: $color-light-main;
+}
+
+h2 {
+    @include font (4.4rem, 130%);
+    @extend %font-add;
+    color: $color-light-main;
+    margin: 0px;
+}
+
+h3 {
+    @include font (3.5rem, 130%, 0.06em);
+    @extend %font-add;
+    color: $color-heading-dark;
+    margin: 0px;
+}
+.footer-header {
+    color: $color-light-main;
+}
+h4, .card-number {
+    margin: 0px;
+    @include font (2rem, 115%, 0.06em);
+    @extend %font-add;
+    color: $color-heading-dark;
+        &.footer-link {
+            color: $color-primary
+        }
+}
+
+p {
+    @include font (1.5rem, 160%);
+    @extend %font-main;
+    color: $color-text-dark;
+    margin: 0px;
+}
+.start-text {
+    color: $color-text-light;
+}
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,23 @@
+.pets_wrapper {
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 52px;
+    margin: 58px 0 62px 0;
+}
+
+.pet-cards-block {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 90px;
+}
+
+.our-pets {
+    background: $color-light;
+}
+

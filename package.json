@@ -1,0 +1,23 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utaina/shelter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utaina/shelter/issues"
+  },
+  "homepage": "https://github.com/utaina/shelter#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

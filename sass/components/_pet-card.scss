@@ -1,0 +1,14 @@
+.pet-card {
+    background: $color-link-hover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 435px;
+    row-gap: 30px;
+    border-radius: 9px;
+        &:hover {
+            @extend %transition;
+            background: $color-light-main;
+        }
+}
