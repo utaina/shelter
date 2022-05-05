@@ -467,21 +467,21 @@ template {
 
 @font-face {
   font-family: "Arial";
-  src: url("Arial-ItalicMT.woff2") format("woff2"), url("Arial-ItalicMT.woff") format("woff");
+  src: url("../assets/fonts/Arial/Arial-ItalicMT.woff2") format("woff2"), url("../assets/fonts/Arial/Arial-ItalicMT.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Arial";
-  src: url("ArialMT.woff2") format("woff2"), url("ArialMT.woff") format("woff");
+  src: url("../assets/fonts/Arial/ArialMT.woff2") format("woff2"), url("../assets/fonts/Arial/ArialMT.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Georgia";
-  src: url("Georgia.woff2") format("woff2"), url("Georgia.woff") format("woff");
+  src: url("../assets/fonts/Georgia/Georgia.woff2") format("woff2"), url("../assets/fonts/Georgia/Georgia.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -502,6 +502,11 @@ h1 {
   font-weight: normal;
   font-style: normal;
   color: #F1CDB3;
+  margin: 0px;
+}
+
+.pets-page-logo-title {
+  color: #545454;
 }
 
 .logo-subtitle {
@@ -511,6 +516,10 @@ h1 {
   font-weight: normal;
   font-style: normal;
   color: #FFFFFF;
+}
+
+.pets-page-logo-subtitle {
+  color: #292929;
 }
 
 h2 {
@@ -611,6 +620,16 @@ a {
   border-radius: 100%;
   padding: 13px 15px;
 }
+.button__round__end {
+  padding: 13px 12px;
+}
+.button__round__next {
+  padding: 13px 18px;
+}
+.button__round__current {
+  padding: 13px 20px;
+  pointer-events: none;
+}
 .button__light {
   background: #FAFAFA;
 }
@@ -618,9 +637,14 @@ a {
   background: #FDDCC4;
   border: 2px solid #FDDCC4;
 }
+.button__gray {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  pointer-events: none;
+}
 
 .title {
-  margin: 60px 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .logo-subtitle {
@@ -628,7 +652,7 @@ a {
 }
 
 .navigation {
-  margin: 58px 2px 0 0;
+  padding: 0 2px 2px 0;
 }
 
 .nav {
@@ -650,6 +674,12 @@ a {
   color: #FFFFFF;
   border-bottom: 3px solid #F1CDB3;
   padding-bottom: 4px;
+}
+.nav-links a.nav-link-pets {
+  color: #545454;
+}
+.nav-links a.nav-link-pets:hover {
+  color: #292929;
 }
 
 .pet-card {
@@ -693,6 +723,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 60px;
 }
 
 .start_wrapper {
@@ -709,6 +740,10 @@ a {
   row-gap: 42px;
   align-items: flex-start;
   margin-bottom: 80px;
+}
+
+.start-section-puppy {
+  align-self: flex-end;
 }
 
 .about_wrapper {
@@ -830,6 +865,32 @@ a {
 .footer-block2 {
   row-gap: 33px;
   width: 302px;
+}
+
+.footer-puppy {
+  align-self: flex-end;
+}
+
+.our-pets-header {
+  background: #FFFFFF;
+}
+
+.pets-page-wrapper {
+  padding: 30px 0 30px 0;
+}
+
+.pet-cards-block-pets-page {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+  margin: 59px 0 59px 0;
+}
+
+.buttons-block {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
