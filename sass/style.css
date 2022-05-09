@@ -622,9 +622,11 @@ a {
   padding: 13px 15px;
 }
 .button__round__end {
+  background: transparent;
   padding: 13px 12px;
 }
 .button__round__next {
+  background: transparent;
   padding: 13px 18px;
 }
 .button__round__current {
@@ -633,10 +635,6 @@ a {
 }
 .button__light {
   background: #FAFAFA;
-}
-.button__light:hover {
-  background: #FDDCC4;
-  border: 2px solid #FDDCC4;
 }
 .button__gray {
   border: 2px solid #CDCDCD;

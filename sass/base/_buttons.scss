@@ -19,9 +19,11 @@
             border-radius: 100%;
             padding: 13px 15px;
             &__end {
+                background: transparent;
                 padding: 13px 12px;
             }
             &__next {
+                background: transparent;
                 padding: 13px 18px 
             }
             &__current {
@@ -31,10 +33,6 @@
         }
         &__light {
             background:  $color-link-hover;
-            &:hover {
-                background: $color-primary-light;
-                border: 2px solid $color-primary-light;
-            }
         }
         &__gray {
             border: 2px solid $color-text-light;
