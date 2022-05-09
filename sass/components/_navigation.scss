@@ -27,6 +27,9 @@
             &:hover {
                 color: $color-button;
             }
+            &.active {
+                color: $color-button;
+            }
         }
     }
 }

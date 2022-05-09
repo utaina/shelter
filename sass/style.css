@@ -493,6 +493,7 @@ body {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -679,6 +680,9 @@ a {
   color: #545454;
 }
 .nav-links a.nav-link-pets:hover {
+  color: #292929;
+}
+.nav-links a.nav-link-pets.active {
   color: #292929;
 }
 
