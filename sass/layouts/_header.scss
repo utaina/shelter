@@ -8,8 +8,9 @@
     }
     @include media-mobile {
         padding-top: 30px;
+        padding-right: 51px;
         column-gap: 43px;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 }
 
