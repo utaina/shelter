@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Arial';
-    src: url('Arial-ItalicMT.woff2') format('woff2'),
-        url('Arial-ItalicMT.woff') format('woff');
+    src: url('../assets/fonts/Arial/Arial-ItalicMT.woff2') format('woff2'),
+        url('../assets/fonts/Arial/Arial-ItalicMT.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Arial';
-    src: url('ArialMT.woff2') format('woff2'),
-        url('ArialMT.woff') format('woff');
+    src: url('../assets/fonts/Arial/ArialMT.woff2') format('woff2'),
+        url('../assets/fonts/Arial/ArialMT.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Georgia';
-    src: url('Georgia.woff2') format('woff2'),
-        url('Georgia.woff') format('woff');
+    src: url('../assets/fonts/Georgia/Georgia.woff2') format('woff2'),
+        url('../assets/fonts/Georgia/Georgia.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -30,17 +30,26 @@ body {
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 h1 {
     @include font (3.2rem, 110%, 0.06em);
     @extend %font-add;
     color: $color-primary;
+    margin: 0px;
 }
+.pets-page-logo-title {
+    color: $color-heading-dark;
+}
+
 .logo-subtitle {
     @include font (1.3rem, 115%, 0.1em);
     @extend %font-main;
     color: $color-light-main;
+}
+.pets-page-logo-subtitle {
+    color: $color-button;
 }
 
 h2 {
@@ -48,6 +57,9 @@ h2 {
     @extend %font-add;
     color: $color-light-main;
     margin: 0px;
+    @include media-mobile {
+        @include font (2.5rem, 130%, 0.06em);
+    }
 }
 
 h3 {
@@ -55,6 +67,10 @@ h3 {
     @extend %font-add;
     color: $color-heading-dark;
     margin: 0px;
+    @include media-mobile {
+        @include font (2.5rem, 130%, 0.06em);
+        text-align: center;
+    }
 }
 .footer-header {
     color: $color-light-main;
@@ -67,18 +83,31 @@ h4, .card-number {
         &.footer-link {
             color: $color-primary
         }
+        &.smaller_header {
+            @include media-mobile {
+                @include font (15px, 110%, 0.06em);
+            }
+}
 }
 h5 {
     margin: 0px;
     @include font (15px, 110%, 0.06em);
     color: $color-heading-dark;
     @extend %font-add;
+    &.donation {
+        @include media-mobile {
+            letter-spacing: normal;
+        }
+    }
 }
 
 .italic-text {
     @extend %font-main;
     @include font (12px, 150%, normal, normal, italic);
     color: $color-italic-text;
+    @include media-mobile {
+        text-align: justify;
+    }
 }
 
 p {

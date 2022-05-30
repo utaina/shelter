@@ -4,6 +4,14 @@
     align-items: center;
     column-gap: 42px;
     padding-top: 60px;
+    @include media-tablet {
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    @include media-mobile {
+        flex-direction: column;
+        row-gap:  105px;
+    }
 }
 
 .start-section-text {
@@ -12,4 +20,32 @@
     row-gap: 42px;
     align-items: flex-start;
     margin-bottom: 80px;
+    width: 460px;
+    @include media-tablet {
+        align-items: center;
+        margin-bottom: 0;
+    }
+    @include media-mobile {
+        align-items: center;
+        margin-bottom: 0;
+        width: 300px;
+        text-align: center;
+    }
+}
+
+h2 {
+    @include media-tablet {
+        align-self: flex-start;
+    }
+}
+.start-section-puppy {
+    align-self: flex-end;
+    @include media-tablet {
+        width: 569px;
+        height: 593px;
+    }
+    @include media-mobile {
+        width: 260px;
+        height: 272px;
+    }
 }

@@ -1,11 +1,8 @@
-.navigation {
-    margin: 58px 2px 0 0;
-}
-
 .nav {
     display: flex;
     column-gap: 35px;
     margin: 0;
+    padding: 0 2px 2px 0;
 }
 
 .nav-links {
@@ -22,5 +19,20 @@
             border-bottom: 3px solid $color-primary;
             padding-bottom: 4px;
         }
+        &.nav-link-pets {
+            color: $color-heading-dark;
+            &:hover {
+                color: $color-button;
+            }
+            &.active {
+                color: $color-button;
+            }
+        }
+    }
+}
+
+.navigation {
+    @include media-mobile {
+        display: none;
     }
 }

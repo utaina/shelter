@@ -4,6 +4,16 @@
     align-items: center;
     justify-content: center;
     column-gap: 30px;
+    @include media-tablet {
+        flex-direction: column-reverse;
+        row-gap: 60px;
+    }
+    @include media-mobile {
+        flex-direction: column-reverse;
+        row-gap: 42px;
+        padding: 42px 10px;
+    }
+    
 }
 
 .donation-content {
@@ -11,6 +21,18 @@
     flex-direction: column;
     max-width: 380px;
     row-gap: 20px;
+    @include media-mobile {
+        max-width: 300px;
+        text-align: center;
+        padding: 0 9px;
+    }
+}
+
+.donation_dog {
+    @include media-mobile {
+        width: 260px;
+        height: 135px;
+    }
 }
 
 .donation {
