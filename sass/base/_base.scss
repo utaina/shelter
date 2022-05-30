@@ -57,6 +57,9 @@ h2 {
     @extend %font-add;
     color: $color-light-main;
     margin: 0px;
+    @include media-mobile {
+        @include font (2.5rem, 130%, 0.06em);
+    }
 }
 
 h3 {
@@ -64,6 +67,10 @@ h3 {
     @extend %font-add;
     color: $color-heading-dark;
     margin: 0px;
+    @include media-mobile {
+        @include font (2.5rem, 130%, 0.06em);
+        text-align: center;
+    }
 }
 .footer-header {
     color: $color-light-main;
@@ -76,18 +83,31 @@ h4, .card-number {
         &.footer-link {
             color: $color-primary
         }
+        &.smaller_header {
+            @include media-mobile {
+                @include font (15px, 110%, 0.06em);
+            }
+}
 }
 h5 {
     margin: 0px;
     @include font (15px, 110%, 0.06em);
     color: $color-heading-dark;
     @extend %font-add;
+    &.donation {
+        @include media-mobile {
+            letter-spacing: normal;
+        }
+    }
 }
 
 .italic-text {
     @extend %font-main;
     @include font (12px, 150%, normal, normal, italic);
     color: $color-italic-text;
+    @include media-mobile {
+        text-align: justify;
+    }
 }
 
 p {

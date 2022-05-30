@@ -5,9 +5,30 @@
     column-gap: 40px;
     row-gap: 30px;
     margin: 59px 0 59px 0;
+    justify-content: center;
+    @include media-tablet {
+        margin: 76px 0;
+    }
+    @include media-mobile {
+        margin: 42px 0;
+    }
 }
 .buttons-block {
     display: flex;
     column-gap: 20px;
     justify-content: center;
+    @include media-mobile {
+        column-gap: 10px;
+    }
+}
+
+.card_8, .card_7 {
+    @include media-tablet {
+        display: none;
+    }
+}
+.card_8, .card_7, .card_6, .card_5, .card_4 {
+    @include media-mobile {
+        display: none;
+    }
 }

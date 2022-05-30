@@ -1,11 +1,8 @@
-.navigation {
-    padding: 0 2px 2px 0;
-}
-
 .nav {
     display: flex;
     column-gap: 35px;
     margin: 0;
+    padding: 0 2px 2px 0;
 }
 
 .nav-links {
@@ -31,5 +28,11 @@
                 color: $color-button;
             }
         }
+    }
+}
+
+.navigation {
+    @include media-mobile {
+        display: none;
     }
 }
