@@ -7,9 +7,26 @@ fetch('../../pets.json')
         });
 
         function getPetsInfo(data) {
+        
+            data.forEach(pet => {
+                const cards = document.querySelectorAll('.pet-card');
+                let img = document.createElement('img');
+                img.innerHTML = element.img;
+                
+            })
 
 
+        (function createCards (data) {
+            
+            const leftButton = document.getElementById('left-button');
+            const rightButton = document.getElementById('right-button');
 
+            cards.forEach(card => {
+                let img = document.createElement('img');
+                img.innerHTML = data
+            })
+
+        })();
 
 
 

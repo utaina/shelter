@@ -24,3 +24,18 @@ burgerLinks.forEach(link => {
         document.body.classList.remove('modal-open');
     })
 })
+
+fetch('../../pets.json') 
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            getPetsInfo(data);
+        });
+
+        function getPetsInfo(data) {
+            data.forEach(pet => {
+                let modal = document.createElement('div');
+                
+            })
+        }
