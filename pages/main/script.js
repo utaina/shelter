@@ -20,6 +20,7 @@ fetch('../../pets.json')
 const burgerButton = document.getElementById('burgerButton');
 const burgerMenu = document.getElementById('burgerMenu');
 const overlay = document.getElementById('overlay');
+const burgerLinks = document.querySelectorAll('.burger-links');
 
 burgerButton.addEventListener('click', () => {
     burgerMenu.classList.toggle('active');
@@ -34,3 +35,13 @@ overlay.addEventListener('click', () => {
     document.body.classList.remove('modal-open');
 
 })
+
+burgerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        burgerMenu.classList.remove('active');
+        burgerButton.classList.remove('burger-rotated');
+        overlay.classList.remove('active');
+        document.body.classList.remove('modal-open');
+    })
+})
+

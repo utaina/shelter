@@ -702,6 +702,7 @@ a {
 
 .burger {
   display: none;
+  cursor: pointer;
   z-index: 110;
   width: 30px;
   height: 22px;
@@ -784,17 +785,18 @@ a {
   width: 320px;
   background-color: #292929;
   flex-direction: column;
-  z-index: 100;
+  z-index: -100;
   position: absolute;
   top: 0;
   right: 0;
   opacity: 0;
   padding: 30px 0 0 10px;
-  transition: all 0.8s;
+  transition: all 0.8s ease-in;
 }
 
 .burger-menu-container.active {
   opacity: 1;
+  z-index: 100;
 }
 
 .nav-burger {

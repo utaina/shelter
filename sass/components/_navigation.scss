@@ -42,17 +42,18 @@
     width: 320px;
     background-color: $color-button;
     flex-direction: column;
-    z-index: 100;
+    z-index: -100;
     position: absolute;
     top: 0;
     right: 0;
     opacity: 0;
     padding: 30px 0 0 10px;
-    transition: all .8s ;
+    transition: all .8s ease-in;
   
 }
 .burger-menu-container.active {
     opacity: 1;
+    z-index: 100;
 }
 
 .nav-burger {
