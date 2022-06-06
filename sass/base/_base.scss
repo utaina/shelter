@@ -26,6 +26,9 @@
 body {
     background: url('../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),  linear-gradient(0deg, #211F20, #211F20);
     font-size: 1.5rem;
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 html {

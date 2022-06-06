@@ -18,16 +18,31 @@
                 </div>
 
             <nav class="navigation">
-                <ul class="nav">
+                <ul class="nav active">
                     <li class="nav-links"><a class="active" href="./index.html">About the shelter</a></li>
                     <li class="nav-links"><a href="../pets/our_pets.html">Our pets</a></li>
                     <li class="nav-links"><a href="#help">Help the shelter</a></li>
                     <li class="nav-links"><a href="#footer">Contacts</a></li>
                 </ul>
             </nav>
-            <span class="burger">
-                <span class="burger__line"></span>
+            <span class="burger" id="burgerButton">
+                    <span class="burger__line"></span>
             </span>
+            <div class="burger-menu-container" id="burgerMenu">
+                <div class="logo">
+                    <a href="./index.html">
+                    <h1 class="title">Cozy House</h1>
+                    <p class="logo-subtitle">Shelter for pets in Boston</p>
+                </a>
+                </div>
+                <ul class="nav-burger">
+                    <li class="nav-links burger-links"><a class="active" href="./index.html">About the shelter</a></li>
+                    <li class="nav-links burger-links"><a href="../pets/our_pets.html">Our pets</a></li>
+                    <li class="nav-links burger-links"><a href="#help">Help the shelter</a></li>
+                    <li class="nav-links burger-links"><a href="#footer">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="overlay" id="overlay"></div>
         </div>
     </header>
 
@@ -82,6 +97,41 @@
                                 <div class="pet-card">
                                     <img src="../../assets/images/pets-woody.png" alt="woody">
                                     <h4 class="card_reader">Woody</h4>
+                                    <button class="button button__light">Learn more</button>
+                                </div>
+                            </a>
+                            <a href="#" class="ancor__card card_4">
+                                <div class="pet-card">
+                                    <img src="../../assets/images/pets-sophia.png" alt="sophia">
+                                    <h4 class="card_reader">Sophia</h4>
+                                    <button class="button button__light">Learn more</button>
+                                </div>
+                            </a>
+                            <a href="#" class="ancor__card card_5">
+                                <div class="pet-card">
+                                    <img src="../../assets/images/pets-timmy.png" alt="timmy">
+                                    <h4 class="card_reader">Timmy</h4>
+                                    <button class="button button__light">Learn more</button>
+                                </div>
+                            </a>
+                            <a href="#" class="ancor__card card_6">
+                                <div class="pet-card">
+                                    <img src="../../assets/images/pets-charly.png" alt="charly">
+                                    <h4 class="card_reader">Charly</h4>
+                                    <button class="button button__light">Learn more</button>
+                                </div>
+                            </a>
+                            <a href="#" class="ancor__card card_7">
+                                <div class="pet-card">
+                                    <img src="../../assets/images/pets-scarlet.png" alt="scarlett">
+                                    <h4 class="card_reader">Scarlett</h4>
+                                    <button class="button button__light">Learn more</button>
+                                </div>
+                            </a>
+                            <a href="#" class="ancor__card card_8">
+                                <div class="pet-card">
+                                    <img src="../../assets/images/pets-freddie.png" alt="freddie">
+                                    <h4 class="card_reader">Freddie</h4>
                                     <button class="button button__light">Learn more</button>
                                 </div>
                             </a>
@@ -190,5 +240,7 @@
                 <img class="footer-puppy" src="../../assets/images/footer-puppy.png" alt="">
             </div>
     </footer>
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="../../pets.json"></script>
 </body>
 </html>

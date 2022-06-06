@@ -18,7 +18,7 @@
         margin: 60px 0;
     }
     @include media-mobile {
-        flex-wrap: wrap;
+       flex-wrap: wrap;
         justify-content: center;
         column-gap: 80px;
         row-gap: 50px;
@@ -35,9 +35,9 @@
     @include media-tablet {
         column-gap: 40px;
     }
-    @include media-mobile {
-        order: -1;
-    }
+    /*@include media-mobile {
+
+    }*/
 }
 
 .third_card {

@@ -25,9 +25,25 @@
                     <li class="nav-links"><a  class="nav-link-pets"href="#footer">Contacts</a></li>
                 </ul>
             </nav>
-            <span class="burger_pets">
-                <span class="burger__line_pets"></span>
+            <span class="burger burger_pets" id="burgerButtonPets">
+                <span class="burger__line burger__line_pets"></span>
             </span>
+            <div class="burger-menu-container" id="burgerMenuPets">
+                <div class="logo">
+                    <a href="./index.html">
+                    <h1 class="title">Cozy House</h1>
+                    <p class="logo-subtitle">Shelter for pets in Boston</p>
+                </a>
+                </div>
+                <ul class="nav-burger">
+                    <li class="nav-links burger-links"><a class="active" href="./index.html">About the shelter</a></li>
+                    <li class="nav-links burger-links"><a href="../pets/our_pets.html">Our pets</a></li>
+                    <li class="nav-links burger-links"><a href="#help">Help the shelter</a></li>
+                    <li class="nav-links burger-links"><a href="#footer">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="overlay" id="overlayPets"></div>
+        </div>
         </div>
     </header>
 
@@ -139,5 +155,7 @@
                 <img class="footer-puppy" src="../../assets/images/footer-puppy.png" alt="">
             </div>
     </footer>
+    <script type="text/javascript" src="./pets.js"></script>
+    <script type="text/javascript" src="../../pets.json"></script>
 </body>
 </html>
